@@ -11,7 +11,10 @@ int main()
     int number_system_16 = 0x1A;
     int number_system_8 = 034;
     int number_system_2 = 0b1010;
-    unsigned long literals_example = 0b1010;
-    std::cout << "hw\n";
+    unsigned long example_unsigned_long = 0b1010;
+    double e = 5E3;
+    double f = 3.5e-3;
+    auto g = 42; // auto обязательно с инициализацией
+    std::cout << sizeof(f)<<"\n";//размер в байтах
     return 0;
 }
