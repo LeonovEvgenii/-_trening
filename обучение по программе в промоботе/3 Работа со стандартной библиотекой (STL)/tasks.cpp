@@ -2,40 +2,36 @@
 #include <list>
 #include <string>
 
-std::list<std::string> tasks {
-        "первая",
-        "вторая",
-        "третья"
-};
+std::list<std::string> tasks{ "первая", "вторая", "третья" };
 
-void add_task (std::string task)
+void add_task(std::string task)
 {
-    tasks.push_front(task);
+  tasks.push_front(task);
 }
 
-void remove_task ()
+void remove_task()
 {
-    tasks.pop_back();
+  tasks.pop_back();
 }
 
-void print_tasks ()
+void print_tasks()
 {
-    for(std::string& task : tasks)
-    {
-        std::cout << task << "\n";
-    }
-    std::cout << "\n";
+  for (std::string& task : tasks)
+  {
+    std::cout << task << "\n";
+  }
+  std::cout << "\n";
 }
 
-int main ()
+int main()
 {
-    print_tasks();
+  print_tasks();
 
-    add_task("четвертая");
+  add_task("четвертая");
 
-    remove_task();
+  remove_task();
 
-    print_tasks();
+  print_tasks();
 
-    return 0;
+  return 0;
 }
