@@ -28,6 +28,7 @@ int main()
     std::cout << "Удаление последнего вошедшего элемента\n";
     q_1.pop();
     std::cout << q_1.front() <<"\n";
+    std::cout << q_1.back() <<"\n";
 
     std::cout << "Инициализация деком\n";
     std::deque<std::string> dq_1 {"четвертый", "пятый", "шестой"};
