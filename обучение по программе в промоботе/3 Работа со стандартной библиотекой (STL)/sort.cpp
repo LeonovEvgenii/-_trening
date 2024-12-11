@@ -2,25 +2,39 @@
 #include <vector>
 #include <algorithm>
 
-int main ()
+int main()
 {
-    std::vector<int> input_vec;
+  std::vector<int> input_vec;
 
-    for(int i=0; i<5; i++)
-    {
-        int input_val;
-        std::cin >> input_val;
-        input_vec.push_back(input_val);
-    }
+  // Синтаксис не соотвествует стандартам кода  i = 0; i < 5
 
-    std::cout << "\nотсортированный\n";
+  // Добавил файл для форматирования
 
-    std::sort(input_vec.begin(), input_vec.end());
+  for (int i = 0; i < 5; i++)
+  {
+    int input_val;
+    std::cin >> input_val;
+    input_vec.push_back(input_val);
+  }
 
-    for(std::vector<int>::iterator iter = input_vec.begin() ; iter != input_vec.end() ; iter++)
-    {
-        std::cout << *iter << "\n";
-    }
+  std::cout << "\nотсортированный\n";
 
-    return 0;
+  std::sort(input_vec.begin(), input_vec.end());
+
+  // Чем отличается запись i++ от ++i - какую лучше использовать в цикле и почему?
+
+  // Логически разницы нет, т к все действия происходят после итерации.
+  // В одном из источников указан незначительный выигрыш в скорости.
+  // Так же code style.
+
+  // Сколько копирований происходит в каждом итераций цикла? как это уменьшить?
+
+  // Думаю, что копирований в итерациях не происходит.
+
+  for (std::vector<int>::iterator iter = input_vec.begin(); iter != input_vec.end(); iter++)
+  {
+    std::cout << *iter << "\n";
+  }
+
+  return 0;
 }
