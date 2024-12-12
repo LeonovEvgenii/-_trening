@@ -1,3 +1,5 @@
+// Используя list, реализуйте очередь задач с возможностью добавления и удаления элементов.
+
 #include <iostream>
 #include <list>
 #include <string>

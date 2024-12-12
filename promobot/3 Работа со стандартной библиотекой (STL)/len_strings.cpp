@@ -1,3 +1,5 @@
+// Итерируйте по vector строк и выводите их длину.
+
 #include <iostream>
 #include <vector>
 #include <string>
