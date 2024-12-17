@@ -3,28 +3,46 @@
 
 #include <iostream>
 
-class MyClass {
-public:
-    explicit MyClass(int value) {
-        std::cout << "value " << value << "\n";
-        
-
-        // Конструктор принимает целое число
-    }
+class A 
+{
+    public:
+        A(int value) 
+        {
+            std::cout << "value " << value << "\n";
+        }
 };
 
-void func(MyClass obj) {
-    // Функция принимает объект MyClass
+void func_A(A obj) 
+{
+
+}
+
+class B 
+{
+    public:
+        explicit B(int value) 
+        {
+            std::cout << "value " << value << "\n";
+        }
+};
+
+void func_B(B obj) 
+{
+
 }
 
 int main() {
-    MyClass a(5); // Явный вызов конструктора
-    func(a);       // Явный вызов функции
+    A a(5);
+    func_A(a);
+
+    func_A(10);
+
+    B b(3);
+    func_B(b);
+
+    // func_B(9); // ошибка кмпиляции, невозможна конвертация
 
     std::cout << "hw" << "\n";
-
-    // Неявный вызов конструктора не сработает
-    // func(10);   // Ошибка компиляции, так как неявное преобразование не разрешено
 
     return 0;
 }
