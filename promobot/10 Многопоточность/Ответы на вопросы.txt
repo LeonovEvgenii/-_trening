@@ -49,4 +49,15 @@ std::lock_guard<std::mutex> lock(mutex_name);
 
 5) Как использовать условные переменные (std::condition_variable) для синхронизации потоков?
 
+Подключить заголовок
+#include <condition_vaiable>
+
+создать экземпляр класса std::condition_variable
+
+Использовать методы condition_variable для синхорнизации потоков.
+
+метод wait блокирует выполнение до достижения условия переданного в метод.
+метод notify_one уведомляет один ожидающий поток
+
+
 
