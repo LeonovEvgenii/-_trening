@@ -3,36 +3,35 @@
 #include <iostream>
 #include <cmath>
 
-class Student //Q// я понимаю что Rush! и заданий очень много, но  класс наверно называется Circle =)
+class Circle //Q// я понимаю что Rush! и заданий очень много, но  класс наверно называется Circle =)
 {
     public:
-        
 
-        Student(float p_radius)
+        Circle(float p_radius)
         {
-            radius_ = p_radius;
+            _radius = p_radius;
         }
 
         float square()
         {
-            return M_PI * pow(radius_, 2);
+            return M_PI * pow(_radius, 2);
         }
 
         float length()
-        {
-            return 2 * radius_ * M_PI;
+        {   
+            return 2 * _radius * M_PI;
         }
 
-        ~Student()
+        ~Circle()
         {}
 
     protected:
-        float radius_; //Q// еще раз напоминаю, что данные задания лучше делать в рамках код стиля компании Промобот
+        float _radius; //Q// еще раз напоминаю, что данные задания лучше делать в рамках код стиля компании Промобот
 };
 
 int main()
 {
-    Student circle(5);
+    Circle circle(5);
 
     std::cout << circle.square() << "\n";
     std::cout << circle.length() << "\n";
