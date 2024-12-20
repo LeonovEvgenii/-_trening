@@ -14,6 +14,8 @@ void print_mas(int* mas, int len)
 
 int main()
 {
+    //Q// т.к. урок пройден, предлагаю далее использовать вектора например
+    // (инклуд подключен, но не используется)
     int mas[] {2,5,8,2,3,33,6,7,67,1};
 
     int size_mas = std::size(mas);
@@ -26,6 +28,7 @@ int main()
         {
             if (mas[i] > mas[i+1])
             {
+                //Q// можно ли здесь применять метод std::swap?
                 int tmp = mas[i+1];
                 mas[i+1] = mas[i];
                 mas[i] = tmp;
