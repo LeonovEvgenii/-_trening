@@ -1,13 +1,14 @@
-// Создайте абстрактный класс Животное с чисто виртуальной функцией издатьЗвук(), и реализуйте производные классы Собака и Кошка.
+// Создайте абстрактный класс Животное с чисто виртуальной функцией издатьЗвук(), 
+// и реализуйте производные классы Собака и Кошка.
 
 #include <iostream>
 
-class Animals //Q// Animal - животное (т.е. любое асбтрактное животное) - множественное число недопустимо
+class Animal //Q// Animal - животное (т.е. любое асбтрактное животное) - множественное число недопустимо
 {
     virtual void make_sound() = 0;
 };
 
-class Dog: public Animals
+class Dog: public Animal
 {
     public:
 
@@ -18,7 +19,7 @@ class Dog: public Animals
 
 };
 
-class Cat: public Animals
+class Cat: public Animal
 {
     public:
     
