@@ -3,7 +3,7 @@
 #include <iostream>
 #include <cmath>
 
-class Student
+class Student //Q// я понимаю что Rush! и заданий очень много, но  класс наверно называется Circle =)
 {
     public:
         
@@ -27,7 +27,7 @@ class Student
         {}
 
     protected:
-        float radius_;
+        float radius_; //Q// еще раз напоминаю, что данные задания лучше делать в рамках код стиля компании Промобот
 };
 
 int main()

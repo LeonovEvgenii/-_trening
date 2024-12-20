@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-class Animals
+class Animals //Q// Animal - животное (т.е. любое асбтрактное животное) - множественное число недопустимо
 {
     virtual void make_sound() = 0;
 };
@@ -28,6 +28,8 @@ class Cat: public Animals
         }
 };
 
+//Q// давай изменим код так, что бы здесь не было переменных типа Dog, Cat
+// а был только Animal, при этом в логе я хочу видеть гав - гав и мяу мяу
 int main()
 {
     Dog dog;

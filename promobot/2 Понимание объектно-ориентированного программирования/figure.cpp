@@ -3,6 +3,8 @@
 #include <iostream>
 #include <cmath>
 
+//Q// что означает virtual float area() = 0;
+// как изменится код задачи при этом? Какой смысл будет у Figure?
 class Figure
 {
     public:
