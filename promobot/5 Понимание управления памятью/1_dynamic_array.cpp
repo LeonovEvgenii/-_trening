@@ -2,12 +2,14 @@
 
 #include <iostream>
     
+//Q// в какои области памяти создается эта переменная? 
 int count_number = 4;
 
 int* create()
 {
+    //Q// в какои области памяти создается эта переменная? на какую область памяти ссылается?
     int *numbers {new int[count_number]};
-
+    
     for (int i = 0 ; i < count_number ; i++)
     {
         numbers[i] = i;
@@ -27,6 +29,7 @@ void use(int* numbers)
 
 void del(int* numbers)
 {
+    //Q// как delete понимает размер который надо удалить?
     delete [] numbers;
 }
 
