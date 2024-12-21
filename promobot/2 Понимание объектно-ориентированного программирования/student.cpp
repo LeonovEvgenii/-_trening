@@ -8,10 +8,10 @@ class Human
         std::string name;
         int age;
 
-        Human(std::string p_name, int p_age)//Q// p - означает pointer и обычно используется в переменных, которые являются указателем (native, smart_pointer и т.д.) - прочитать венгерская нотация 
+        Human(std::string param_name, int param_age)//Q// p - означает pointer и обычно используется в переменных, которые являются указателем (native, smart_pointer и т.д.) - прочитать венгерская нотация 
         {
-            name = p_name;
-            age = p_age;
+            name = param_name;
+            age = param_age;
         }
 
 };
@@ -26,9 +26,9 @@ class Student: public Human
 
         //Q// сколько копирований будет при передачи std::string таким образом - как это оптимизировать?
         // почему данный способ оптимизации не подходит для инт и флоат? 
-        Student(std::string p_name, int p_age, float p_average_rating): Human(p_name, p_age)
+        Student(std::string param_name, int param_age, float param_average_rating): Human(param_name, param_age)
         {
-            average_rating = p_average_rating;
+            average_rating = param_average_rating;
             std::cout<<"hw\n";
         }
 
